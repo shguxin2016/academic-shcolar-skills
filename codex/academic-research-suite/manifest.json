@@ -1,0 +1,16 @@
+{
+  "name": "academic-research-suite",
+  "adapter_version": "0.1.0",
+  "generated_for": "codex",
+  "source_repository": "https://github.com/crazymsn/academic-shcolar-skills",
+  "packaging": {
+    "type": "single_codex_suite_skill",
+    "entrypoint": "SKILL.md",
+    "vendored_root": "ars"
+  },
+  "runtime_notes": [
+    "Install with scripts/install-codex-skill.ps1 or scripts/install-codex-skill.sh so the ARS source folders are copied into ars/.",
+    "Codex does not register Claude slash commands; use plain aliases such as ars-plan, ars-outline, and ars-full.",
+    "Do not spawn subagents automatically unless the user explicitly asks for parallel delegation."
+  ]
+}

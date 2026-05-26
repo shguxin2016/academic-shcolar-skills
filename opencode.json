@@ -1,0 +1,57 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "default_agent": "academic-research-suite",
+  "command": {
+    "ars-plan": {
+      "description": "Plan an academic paper through ARS plan mode.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper plan mode. Task: $ARGUMENTS"
+    },
+    "ars-outline": {
+      "description": "Create an academic paper outline.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper outline-only mode. Task: $ARGUMENTS"
+    },
+    "ars-abstract": {
+      "description": "Draft or revise an abstract.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper abstract-only mode. Task: $ARGUMENTS"
+    },
+    "ars-lit-review": {
+      "description": "Run literature-review planning or synthesis.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS literature review routing. If source discovery is needed, route to deep-research lit-review mode; otherwise route to academic-paper lit-review mode. Task: $ARGUMENTS"
+    },
+    "ars-citation-check": {
+      "description": "Check citations and reference integrity.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper citation-check mode. Verify sources instead of assuming references are valid. Task: $ARGUMENTS"
+    },
+    "ars-disclosure": {
+      "description": "Prepare AI-use or research disclosure text.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper disclosure mode. Task: $ARGUMENTS"
+    },
+    "ars-format-convert": {
+      "description": "Plan or perform academic format conversion.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper format-convert mode. Task: $ARGUMENTS"
+    },
+    "ars-revision-coach": {
+      "description": "Turn reviewer feedback into a revision plan.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper revision-coach mode. Task: $ARGUMENTS"
+    },
+    "ars-revision": {
+      "description": "Revise a draft with ARS revision mode.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-paper revision mode. Task: $ARGUMENTS"
+    },
+    "ars-full": {
+      "description": "Start the full research-to-paper pipeline.",
+      "agent": "academic-research-suite",
+      "template": "Use ARS academic-pipeline full workflow. If the topic is vague, begin with Socratic research-question scoping before drafting. Task: $ARGUMENTS"
+    }
+  }
+}
