@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "bash \"${CLAUDE_PROJECT_ROOT}/scripts/announce-ars-loaded.sh\"",
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  }
+}
